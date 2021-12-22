@@ -3,6 +3,7 @@
 The files in this repository were used to configure the network depicted below.
 
 [Network Diagram](https://github.com/Miller7002/Azure-Virtual-Network-With-ELK/blob/8f10c9273e27135955cc6251973ebd3d5a7f4e67/Diagrams/Virtual_Network.png)
+
 ![image](https://user-images.githubusercontent.com/88359985/147163618-a16f0a1f-c18a-4904-8adc-f198bfb15c4a.png)
 
 
