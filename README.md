@@ -6,9 +6,9 @@ https://github.com/Miller7002/Azure-Virtual-Network-With-ELK/blob/8f10c9273e2713
 ![image](https://user-images.githubusercontent.com/88359985/147163618-a16f0a1f-c18a-4904-8adc-f198bfb15c4a.png)
 
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
-  - _TODO: Enter the playbook file._
+  https://github.com/Miller7002/Azure-Virtual-Network-With-ELK/commit/8a81c68b52c16abfee949b03d3c60a9f915003c7
 
 This document contains the following details:
 - Description of the Topologu
