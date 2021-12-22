@@ -12,7 +12,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 [Filebeat.yml](https://github.com/Miller7002/Azure-Virtual-Network-With-ELK/blob/main/Ansible/Filebeat.yml)
 
 This document contains the following details:
-- ### Description of the Topology
+- ## Description of the Topology
 - Access Policies
 - ELK Configuration
   - Beats in Use
