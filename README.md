@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-Diagrams/Virtual_Network.png
+https://github.com/Miller7002/Azure-Virtual-Network-With-ELK/blob/8f10c9273e27135955cc6251973ebd3d5a7f4e67/Diagrams/Virtual_Network.png
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
 
