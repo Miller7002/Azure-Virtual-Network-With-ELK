@@ -104,4 +104,4 @@ SSH into the control node and follow the steps below:
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
   - You would update the hosts file within the ansible container at the /etc/ansible directory to include the private IP addresses of the Virtual Machines you wish to run the playbook against whether it be for Filebeat or the ELK server. If you are only wanting to run a playbook against specific Virtual Machines, you can add additional 'webservers' sections to include the specific private IP addresses. Once you have specified the IP addresses in the 'hosts' file, you will then need to change which host you want the playbook to run against in the playbook YAML file.
 - _Which URL do you navigate to in order to check that the ELK server is running?_
-  - http//:[VM public IP]:5601/app/kibana
+  - http//:[ELK Server public IP]:5601/app/kibana
