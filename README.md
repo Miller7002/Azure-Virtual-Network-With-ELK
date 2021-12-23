@@ -25,21 +25,21 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
-- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
+- A load balancer serves many purposes including protecting from attacks such as DDoS and also making sure traffic is routed to a running Virtual Machine if in the event one is down. 
+- The advantage of having a Jump Box is to restrict traffic from the internet to the Virtual Machines on the network.
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
-- _TODO: What does Filebeat watch for?_
-- _TODO: What does Metricbeat record?_
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the log files and system metrics.
+- Filebeat records and monitors logs files from Web 1 and Web 2
+- Metricbeat records metrics from Web 1 and Web 2
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
-| Name     | Function | IP Address | Operating System |
-|----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
+| Name    | Function        | IP Address    | Operating System |
+|---------|-----------------|---------------|------------------|
+| Jumpbox | Gateway         | 20.124.34.184 | Linux            |
+| Web 1   | Virtual Machine | 10.1.0.21     | Linux            |
+| Web 2   | Virtual Machine | 10.1.0.20     | Linux            |
+| Elk     | ELKStack        | 10.2.0.4      | Linux            |
 
 ### Access Policies
 
