@@ -96,7 +96,7 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 - Copy the playbook file to /etc/ansible within the ansible container.
-- Update the configuration file to include the IP addresses of what Virtual Machines you want to run the playbook on.
+- Update the hosts file to include the IP addresses of what Virtual Machines you want to run the playbook on.
 - Run the playbook, and navigate to Kibana via your web browser (http//:[VM public IP]:5601/app/kibana) and check to make sure Kibana is receiving log data from the VM's you ran the playbook on.
 
 - _Which file is the playbook? Where do you copy it?_
