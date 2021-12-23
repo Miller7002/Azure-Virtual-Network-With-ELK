@@ -74,7 +74,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-[docker ps Screenshot](Ansible/docker ps Screenshot/Screenshot (69).png)
+[docker ps Screenshot](https://github.com/Miller7002/Azure-Virtual-Network-With-ELK/blob/main/Ansible/docker%20ps%20Screenshot/Screenshot%20(69).png)
 ![image](https://user-images.githubusercontent.com/88359985/147294990-7f6da034-4674-4e7f-9576-dc9baf0d8643.png)
 
 
