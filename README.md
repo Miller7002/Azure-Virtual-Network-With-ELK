@@ -68,7 +68,7 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 The playbook implements the following tasks:
 - Installs docker.io
 - Installs python3-pip
-- Installsdocker module
+- Installs docker module
 - Increase virtual memory
 - Download and install docker elk container
 
@@ -80,21 +80,24 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_
+- Web 1: 10.1.0.21
+- Web 2: 10.1.0.20
 
 We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_
+- Filebeat
+-  Metricbeat
 
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+- Filebeat will monitor log files and log events and send a copy of them to either Elasticsearch or Logstash for indexing. You can use these logs to track what a user is doing on either Virtual Machine.
+- Metricbeat will collect metrics and data and send it to either Elasticsearch or Logstash. You can expect to see metrics and data from the operating systems and services running on the Virtual Machines
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the _____ file to _____.
-- Update the _____ file to include...
-- Run the playbook, and navigate to ____ to check that the installation worked as expected.
+- Copy the playbook file to ~/etc/ansible.
+- Update the configuration file to include the IP addresses of what Virtual Machines you want to run the playbook on.
+- Run the playbook, and navigate to Kibana via your web browser (http//:[VM public IP]:5601/app/kibana) and check to make sure Kibana is receiving log data from the VM's you ran the playbook on.
 
 _TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_
