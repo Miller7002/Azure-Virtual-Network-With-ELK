@@ -95,12 +95,13 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the playbook file to ~/etc/ansible within the ansible container.
+- Copy the playbook file to /etc/ansible within the ansible container.
 - Update the configuration file to include the IP addresses of what Virtual Machines you want to run the playbook on.
 - Run the playbook, and navigate to Kibana via your web browser (http//:[VM public IP]:5601/app/kibana) and check to make sure Kibana is receiving log data from the VM's you ran the playbook on.
 
-_TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_
-  - The file for the playbook would be the following YAML file [ELK.yml](https://github.com/Miller7002/Azure-Virtual-Network-With-ELK/blob/main/Ansible/ELK.yml) and you would place it in ~/etc/ansible within the anisble container on your host machine.
+  - The file for the playbook would be the following YAML file [ELK.yml](https://github.com/Miller7002/Azure-Virtual-Network-With-ELK/blob/main/Ansible/ELK.yml) and you would place it in /etc/ansible within the anisble container on your host machine.
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
+  -You would update the hosts file within the ansible container at the /etc/ansible directory to include the private IP addresses of the Virtual Machines you wish to run the playbook against whether it be for Filebeat or the ELK server. If you are only wanting to run a playbook against specific Virtualy Machines, you can add additional 'webservers' sections to include the specific private IP addresses. Once you have specified the IP addresses in the 'hosts' file, you will then need to change which host you want the playbook to run against in the playbook YAML file.
 - _Which URL do you navigate to in order to check that the ELK server is running?
+-   -http//:[VM public IP]:5601/app/kibana
