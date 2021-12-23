@@ -101,6 +101,6 @@ SSH into the control node and follow the steps below:
 
 _TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_
-- - The file for the playbook would be the following YAML file [ELK.yml](https://github.com/Miller7002/Azure-Virtual-Network-With-ELK/blob/main/Ansible/ELK.yml) and you would place it in ~/etc/ansible within the anisble container on your host machine.
+ -- The file for the playbook would be the following YAML file [ELK.yml](https://github.com/Miller7002/Azure-Virtual-Network-With-ELK/blob/main/Ansible/ELK.yml) and you would place it in ~/etc/ansible within the anisble container on your host machine.
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
 - _Which URL do you navigate to in order to check that the ELK server is running?
